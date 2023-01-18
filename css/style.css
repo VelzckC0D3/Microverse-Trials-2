@@ -1,28 +1,30 @@
-#header {
+/* HEADER */
+
+body{
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+header {
     position: fixed;
     padding: 1rem 20rem;
     min-height: 100px;
     z-index:3;
     display: flex;    
     justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: white;
+    border-color: red;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-#y {
-    padding: 1rem 20rem;
-    display: flex;
-    justify-content: space-evenly;
-};
-
-#nav-bar {
-    height: 5rem;
-    display: flex;
-
+@media (max-width: 720px) {
+    header {
+        flex-wrap: wrap;
+    }
 }
 
 li a {
@@ -43,10 +45,118 @@ ul {
     padding: 0;
 }
 
-
-@media (max-width: 720px) {
-    header {
-        flex-wrap: wrap;
-    }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
+
+#y {
+    padding: 1rem 20rem;
+    display: flex;
+    justify-content: space-evenly;
+};
+
+#nav-bar {
+    height: 5rem;
+    display: flex;
+}
+
+#tittle {
+    -webkit-transform: translateX(-30rem);
+}
+
+#menuBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-8rem);
+    width: 100%;
+    width: 26rem;
+    justify-content: space-around;
+    color: grey;
+}
+
+#menuBar a {
+    -webkit-transition: color 100ms;
+}
+
+
+#menuBar a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+#menuBar a:hover {
+    color: black;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+#main {
+    padding-top: 10rem;
+    display: flex;
+    width: 131rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main h2 {
+    transform-origin-x: -10rem;
+    color: black;
+    
+}
+
+#form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.4);
+    width: 20rem;
+}
+
+#submitButton {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: translateY(-1rem);
+    background-color: #f1c40f;
+}
+
+#container {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCard {
+    margin: 2rem 0 2rem 0;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
