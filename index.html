@@ -8,7 +8,7 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header id="header">
+    <header id="header" class="sticky">
     <img id="header-img" src="" alt=""/> 
     <nav  id="nav-bar">
         <li><a href="#element-1" class="nav-link">element-1</a></li>
@@ -16,18 +16,95 @@
         <li ><a href="#element-3" class="nav-link">element-3</a></li>
       </nav>
     </header>
-    <div id="container">
-    <section id="element-1"></section>
-    <section id="element-2"><video id="video" src=""></video></section>
-    <section id="element-3"></section>
-
+    
+   <div>
+    <h2>Handcrafted, home-made masterpieces</h2>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
 
       <input name="email" type="email" id="email" placeholder="Enter your email address" required/>
-    <input id="submit" type="submit" />
+    <input id="submit" type="submit"  />
 
     
     </form>
+  </div>
+
+    <div id="container">
+    <section id="element-1">
+      <div class="icon"><img/></div>
+      <div class="description">
+      <h2>Premium Materials</h2>
+      <p>Our trombones use the shiniest brass which is sourced
+         locally. This will increase the longevity of your purchase.</p>
+      </div>
+
+      <div class="icon"><img/></div>
+      <div class="description">
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+
+      <div class="icon"><img/></div>
+      <div class="description">
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+      </div>
+
+    </section>
+
+    <section id="element-2">
+      <iframe id="video" src="https://youtu.be/y8Yv4pnO7qc" height="300" width="300" >
+      </iframe>
+    </section>
+
+    <section id="element-3">
+      <div class="product">
+        <h2 class="product-h2">Tenor TROMBONE</h2>
+        <ol>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum color</li>
+          <li>Lorem ipsum,</li>
+        </ol>
+        <button class="button">Select</button>
+
+      </div>
+
+      <div class="product">
+        <h2 class="product-h2">BASS TROMBONE</h2>
+        <ol>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum color</li>
+          <li>Lorem ipsum,</li>
+        </ol>
+        <button class="button">Select</button>
+
+      </div>
+
+      <div class="product">
+        <h2 class="product-h2">VALVE TROMBONE</h2>
+        <ol>
+          <li>Plays similar to a Trumpet</li>
+          <li>Great for Jazz Bands</li>
+          <li>Lorem ipsum color</li>
+          <li>Lorem ipsum,</li>
+        </ol>
+        <button class="button">Select</button>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h4>Copyright 2016, Original Trombones</h4>
+    </footer>
+
+    
     <script  src="js/index.js"></script>
   </body>
 </html>

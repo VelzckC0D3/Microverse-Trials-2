@@ -1,4 +1,19 @@
 #header {
+    position: fixed;
+    padding: 1rem 20rem;
+    min-height: 100px;
+    z-index:3;
+    display: flex;    
+    justify-content: space-evenly;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#y {
     padding: 1rem 20rem;
     display: flex;
     justify-content: space-evenly;
@@ -34,3 +49,4 @@ ul {
         flex-wrap: wrap;
     }
 }
+
