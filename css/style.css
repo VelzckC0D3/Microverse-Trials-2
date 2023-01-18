@@ -1,0 +1,36 @@
+#header {
+    padding: 1rem 20rem;
+    display: flex;
+    justify-content: space-evenly;
+};
+
+#nav-bar {
+    height: 5rem;
+    display: flex;
+
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 720px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
